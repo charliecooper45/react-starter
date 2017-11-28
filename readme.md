@@ -19,10 +19,13 @@ webpack-dev-server: Node.js Express server, bundle files are written to memory
 ## Plugins
 
 html-webpack-plugin: generates a HTML5 file that includes all Webpack bundles as script tags
+extract-text-webpack-plugin: extracts texts from a bundle into a separate file
 
 ## Loaders
 
 babel-loader: Webpack plugin for Babel
+css-loader: allows importing css files
+file-loader: allows importing files
 
 ## TODO
 *) linting

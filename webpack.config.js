@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './client/index.js',
@@ -15,6 +16,18 @@ module.exports = {
         use: [
           'babel-loader',
         ]
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          use: 'css-loader',
+        })
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
       }
     ]
   },
@@ -23,7 +36,8 @@ module.exports = {
       template: './client/index.html',
       filename: 'index.html',
       inject: 'body'
-    })
+    }),
+    new ExtractTextPlugin('style.bundle.css')
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
