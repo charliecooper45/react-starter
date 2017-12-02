@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './client/index.js',
+  entry: './client/index.jsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve('dist')
@@ -11,22 +11,28 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [
-          'babel-loader',
+          'babel-loader'
         ]
       },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
-          use: 'css-loader',
+          use: 'css-loader'
         })
       },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
-          'file-loader',
+          'file-loader'
         ],
       }
     ]

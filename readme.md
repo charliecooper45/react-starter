@@ -26,6 +26,7 @@ extract-text-webpack-plugin: extracts texts from a bundle into a separate file
 babel-loader: Webpack plugin for Babel
 css-loader: allows importing css files
 file-loader: allows importing files
+eslint-loader: lints code
 
 ## TODO
 *) linting
