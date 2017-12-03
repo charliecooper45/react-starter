@@ -29,6 +29,6 @@ file-loader: allows importing files
 eslint-loader: lints code
 
 ## TODO
-*) linting
-*) versioning/hash
-*) split vendor bundle
+* versioning/hash
+* split vendor bundle
+* production build
