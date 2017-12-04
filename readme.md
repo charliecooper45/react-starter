@@ -32,3 +32,7 @@ eslint-loader: lints code
 * versioning/hash
 * split vendor bundle
 * production build
+* hot module replacement (HMR)
+* sourcemaps
+* minification/uglification
+* caching
