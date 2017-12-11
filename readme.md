@@ -14,19 +14,23 @@ yarn remove <dependency>
 
 ## Running
 
-webpack-dev-server: Node.js Express server, bundle files are written to memory
+_webpack-dev-server_: Node.js Express server, bundle files are written to memory
 
 ## Plugins
 
-html-webpack-plugin: generates a HTML5 file that includes all Webpack bundles as script tags
-extract-text-webpack-plugin: extracts texts from a bundle into a separate file
+_html-webpack-plugin_: generates a HTML5 file that includes all Webpack bundles as script tags
+
+_extract-text-webpack-plugin_: extracts texts from a bundle into a separate file
 
 ## Loaders
 
-babel-loader: Webpack plugin for Babel
-css-loader: allows importing css files
-file-loader: allows importing files
-eslint-loader: lints code
+_babel-loader_: Webpack plugin for Babel
+
+_css-loader_: allows importing css files
+
+_file-loader_: allows importing files
+
+_eslint-loader_: lints code
 
 ## TODO
 * versioning/hash
