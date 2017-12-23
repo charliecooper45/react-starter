@@ -18,6 +18,12 @@ _webpack-dev-server_: Node.js Express server, bundle files are written to memory
 
 ## Plugins
 
+_define-plugin_: creates global constants at compile time
+
+_uglify-js-plugin_: minifies JavaScript files
+
+_occurrence-order-plugin_: assign module/chunk ids by occurrence count
+
 _html-webpack-plugin_: generates a HTML5 file that includes all Webpack bundles as script tags
 
 _extract-text-webpack-plugin_: extracts texts from a bundle into a separate file
@@ -33,10 +39,10 @@ _file-loader_: allows importing files
 _eslint-loader_: lints code
 
 ## TODO
-* versioning/hash
+* parent webpack file for prod/dev
 * split vendor bundle
-* production build
 * hot module replacement (HMR)
 * sourcemaps
 * minification/uglification
 * caching
+* clean

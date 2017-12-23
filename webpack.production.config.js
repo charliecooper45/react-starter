@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -5,17 +6,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: './client/index.jsx',
   output: {
-    filename: 'bundle.js',
+    filename: '[name]-[hash].js',
     path: path.resolve('dist')
   },
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader'
-      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -26,7 +21,12 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
-          use: 'css-loader'
+          use: [{
+            loader: 'css-loader',
+            options: {
+              minimize: true
+            }
+          }]
         })
       },
       {
@@ -38,12 +38,17 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(true),
     new HtmlWebpackPlugin({
       template: './client/index.html',
       filename: 'index.html',
       inject: 'body'
     }),
-    new ExtractTextPlugin('style.bundle.css')
+    new ExtractTextPlugin('[name]-[hash].css')
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
