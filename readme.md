@@ -18,6 +18,8 @@ _webpack-dev-server_: Node.js Express server, bundle files are written to memory
 
 ## Plugins
 
+_clean-webpack-plugin_: cleans build folders before building
+
 _define-plugin_: creates global constants at compile time
 
 _uglify-js-plugin_: minifies JavaScript files
@@ -45,4 +47,3 @@ _eslint-loader_: lints code
 * sourcemaps
 * minification/uglification
 * caching
-* clean
