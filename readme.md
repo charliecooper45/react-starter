@@ -26,6 +26,8 @@ _uglify-js-plugin_: minifies JavaScript files
 
 _occurrence-order-plugin_: assign module/chunk ids by occurrence count
 
+_commons-chunk-plugin_: creates a separate chunk (file)
+
 _html-webpack-plugin_: generates a HTML5 file that includes all Webpack bundles as script tags
 
 _extract-text-webpack-plugin_: extracts texts from a bundle into a separate file
@@ -42,8 +44,9 @@ _eslint-loader_: lints code
 
 ## TODO
 * parent webpack file for prod/dev
-* split vendor bundle
 * hot module replacement (HMR)
 * sourcemaps
-* minification/uglification
-* caching
+
+## Links
+* [Webpack Guides](https://webpack.js.org/guides)
+* [SurviveJS Webpack](https://survivejs.com/webpack/)
