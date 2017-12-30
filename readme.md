@@ -12,6 +12,12 @@ Remove dependency
 yarn remove <dependency>
 ```
 
+## Webpack 
+
+* webpack.common.js: common configuration
+* webpack.dev.js: dev configuration
+* webpack.prod.js: prod configuration
+
 ## Running
 
 _webpack-dev-server_: Node.js Express server, bundle files are written to memory
@@ -43,7 +49,6 @@ _file-loader_: allows importing files
 _eslint-loader_: lints code
 
 ## TODO
-* parent webpack file for prod/dev
 * hot module replacement (HMR)
 * sourcemaps
 
