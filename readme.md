@@ -50,7 +50,6 @@ _eslint-loader_: lints code
 
 ## TODO
 * hot module replacement (HMR)
-* sourcemaps
 
 ## Links
 * [Webpack Guides](https://webpack.js.org/guides)
