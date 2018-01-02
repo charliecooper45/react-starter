@@ -1,5 +1,11 @@
 # React Starter
-React starter project using Webpack 3.
+Opinionated React starter project.
+
+## Technologies
+
+* React
+* Webpack 3
+* Yarn
 
 ## Yarn
 Add dependency
@@ -49,7 +55,11 @@ _file-loader_: allows importing files
 _eslint-loader_: lints code
 
 ## TODO
-* hot module replacement (HMR)
+* Hot Module Replacement (HMR)
+* Node backend
+* Authentication
+* Styled Components
+* CircleCI Build
 
 ## Links
 * [Webpack Guides](https://webpack.js.org/guides)
