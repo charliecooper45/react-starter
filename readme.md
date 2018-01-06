@@ -10,6 +10,11 @@ Opinionated React starter project.
 ## Yarn
 Add dependency
 ```
+yarn add <dependency>
+```
+
+Add dev dependency
+```
 yarn add -D <dependency>
 ```
 
@@ -60,6 +65,7 @@ _eslint-loader_: lints code
 * Authentication
 * Styled Components
 * CircleCI Build
+* Redux
 
 ## Links
 * [Webpack Guides](https://webpack.js.org/guides)

@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './client/index.jsx',
+    main: './src/index.jsx',
     vendor: ['react', 'react-dom']
   },
   output: {
@@ -37,7 +37,7 @@ module.exports = {
       name: 'manifest'
     }),
     new HtmlWebpackPlugin({
-      template: './client/index.html',
+      template: './src/index.html',
       filename: 'index.html',
       inject: 'body'
     }),
