@@ -60,9 +60,8 @@ _file-loader_: allows importing files
 _eslint-loader_: lints code
 
 ## TODO
+* Prettier
 * Hot Module Replacement (HMR)
-* Node backend
-* Authentication
 * Styled Components
 * CircleCI Build
 * Redux
