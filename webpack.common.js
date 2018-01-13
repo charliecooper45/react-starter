@@ -22,9 +22,14 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif|svg|ttf|woff2|woff|eot)$/,
+        test: /\.(png|svg|ttf|eot|woff2?)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 25000
+            }
+          }
         ]
       }
     ]
