@@ -9,8 +9,11 @@
     "build": "webpack --progress --config webpack.prod.js"
   },
   "dependencies": {
+    "bootstrap-css-only": "^3.3.7",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^16.1.1",
+    "styled-components": "^2.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

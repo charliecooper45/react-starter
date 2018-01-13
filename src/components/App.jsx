@@ -1,10 +1,22 @@
 import React from 'react';
-
+import styled from 'styled-components';
+import Menu from './Menu';
 import keenImage from '../images/keen.png';
 
+const Wrapper = styled.div`
+  text-align: center;
+`;
+
+const Title = styled.h1`
+  padding: 10px;
+  font-size: 1.5em;
+  color: palevioletred;
+`;
+
 export default () => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>Hello World</h1>
+  <Wrapper>
+    <Menu />
+    <Title>Hello World</Title>
     <img src={keenImage} alt="Commander Keen" />
-  </div>
+  </Wrapper>
 );

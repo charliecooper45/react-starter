@@ -1,3 +1,5 @@
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+
 # React Starter
 Opinionated React starter project.
 
@@ -57,9 +59,12 @@ _css-loader_: allows importing css files
 
 _file-loader_: allows importing files
 
+_url-loader_: inline assets as base64 strings within bundle
+
 _eslint-loader_: lints code
 
 ## TODO
+* URL Loader
 * Prettier
 * Hot Module Replacement (HMR)
 * Styled Components
@@ -69,3 +74,4 @@ _eslint-loader_: lints code
 ## Links
 * [Webpack Guides](https://webpack.js.org/guides)
 * [SurviveJS Webpack](https://survivejs.com/webpack/)
+* [Styled Components](https://www.styled-components.com/)
