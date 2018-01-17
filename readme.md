@@ -64,14 +64,16 @@ _url-loader_: inline assets as base64 strings within bundle
 _eslint-loader_: lints code
 
 ## TODO
-* URL Loader
+* API call
 * Prettier
-* Hot Module Replacement (HMR)
-* Styled Components
 * CircleCI Build
 * Redux
+* Routing
+* Caching
+* Webpack prod output
 
 ## Links
+* [reactGo](https://github.com/reactGo/reactGo/tree/master/app)
 * [Webpack Guides](https://webpack.js.org/guides)
 * [SurviveJS Webpack](https://survivejs.com/webpack/)
 * [Styled Components](https://www.styled-components.com/)
