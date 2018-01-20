@@ -6,6 +6,9 @@ import { Link, NavLink } from 'react-router-dom';
 const NoTextDecoration = {
   textDecoration: 'none',
 };
+const BoldWhenActive = {
+  fontWeight: 'bold'
+};
 const StyledLink = styled.a`
   color: #9d9d9d;
   
@@ -26,14 +29,14 @@ export default () => (
     <Navbar.Collapse>
       <Nav>
         <NavItem>
-          <NavLink to="/" style={NoTextDecoration}>
+          <NavLink exact to="/" style={NoTextDecoration} activeStyle={BoldWhenActive}>
             <StyledLink>Home</StyledLink>
           </NavLink>
         </NavItem>
         <NavItem>
-          <Link to="/image" style={NoTextDecoration} >
+          <NavLink to="/image" style={NoTextDecoration} activeStyle={BoldWhenActive}>
             <StyledLink>Image</StyledLink>
-          </Link>
+          </NavLink>
         </NavItem>
       </Nav>
     </Navbar.Collapse>
