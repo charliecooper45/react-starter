@@ -1,22 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import Menu from './Menu';
-import keenImage from '../images/keen.png';
+import { Route } from 'react-router-dom';
+import { Jumbotron } from 'react-bootstrap';
+import Header from './Header';
+import Home from './Home';
+import Image from './Image';
 
 const Wrapper = styled.div`
   text-align: center;
 `;
 
-const Title = styled.h1`
-  padding: 10px;
-  font-size: 1.5em;
-  color: palevioletred;
-`;
-
 export default () => (
   <Wrapper>
-    <Menu />
-    <Title>Hello World</Title>
-    <img src={keenImage} alt="Commander Keen" />
+    <Header />
+    <Jumbotron>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/image" component={Image} />
+    </Jumbotron>
   </Wrapper>
 );

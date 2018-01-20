@@ -68,12 +68,21 @@ _eslint-loader_: lints code
 * Prettier
 * CircleCI Build
 * Redux
-* Routing
-* Caching
+* Trailing commas
 * Webpack prod output
+* Handle direct links
 
 ## Links
+### React
 * [reactGo](https://github.com/reactGo/reactGo/tree/master/app)
+* [React Redux Links](https://github.com/markerikson/react-redux-links)
+* [React Training React Router](https://reacttraining.com/react-router/web/example/basic)
+* [React Router and URLs](https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writting-manually)
+* [Styled Components](https://www.styled-components.com/)
+
+### Webpack
 * [Webpack Guides](https://webpack.js.org/guides)
 * [SurviveJS Webpack](https://survivejs.com/webpack/)
-* [Styled Components](https://www.styled-components.com/)
+
+### Other
+* [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
