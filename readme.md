@@ -63,15 +63,6 @@ _url-loader_: inline assets as base64 strings within bundle
 
 _eslint-loader_: lints code
 
-## TODO
-* API call
-* Prettier
-* CircleCI Build
-* Redux
-* Trailing commas
-* Webpack prod output
-* Handle direct links
-
 ## Links
 ### React
 * [reactGo](https://github.com/reactGo/reactGo/tree/master/app)
