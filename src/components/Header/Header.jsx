@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 
 const NoTextDecoration = {
-  textDecoration: 'none',
+  textDecoration: 'none'
 };
 const BoldWhenActive = {
   fontWeight: 'bold'

@@ -1,5 +1,5 @@
 import React from 'react';
-import keenImage from '../images/keen.png';
+import keenImage from '../../assets/images/keen.png';
 
 export default () => (
   <div>
