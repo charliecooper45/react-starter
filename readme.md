@@ -9,6 +9,12 @@ Opinionated React starter project.
 * Webpack 3
 * Yarn
 
+## DB
+The project uses the json-server project as a backend. This serves a JSON Rest API from a db.json file.
+```
+yarn run db
+```
+
 ## Yarn
 Add dependency
 ```
@@ -77,3 +83,8 @@ _eslint-loader_: lints code
 
 ### Other
 * [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+
+## TODO:
+* Direct links
+* 404 errors
+* Redux

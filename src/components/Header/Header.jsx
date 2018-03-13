@@ -28,11 +28,11 @@ export default () => (
         <NavItem componentClass={NavLink} href="/" exact to="/" activeStyle={BoldWhenActive}>
           <StyledLink>Home</StyledLink>
         </NavItem>
-        <NavItem componentClass={NavLink} href="/image" to="/image" activeStyle={BoldWhenActive}>
-          <StyledLink>Image</StyledLink>
+        <NavItem componentClass={NavLink} href="/bikes" to="/bikes" activeStyle={BoldWhenActive}>
+          <StyledLink>Bikes</StyledLink>
         </NavItem>
-        <NavItem componentClass={NavLink} href="/articles" to="/articles" activeStyle={BoldWhenActive}>
-          <StyledLink>Articles</StyledLink>
+        <NavItem componentClass={NavLink} href="/rides" to="/rides" activeStyle={BoldWhenActive}>
+          <StyledLink>Rides</StyledLink>
         </NavItem>
       </Nav>
     </Navbar.Collapse>

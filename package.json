@@ -5,11 +5,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "db": "json-server --watch ./db/db.json",
     "start": "webpack-dev-server --progress --inline --open --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap-css-only": "^3.3.7",
+    "json-server": "^0.12.1",
     "prop-types": "^15.6.1",
     "react": "^16.1.1",
     "react-bootstrap": "^0.32.0",
@@ -22,6 +25,7 @@
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route } from 'react-router-dom';
 import { Jumbotron } from 'react-bootstrap';
-import Header from './Header/Header';
-import Home from './Home/Home';
-import Image from './Image/Image';
-import Articles from '../containers/Articles/Articles';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Bikes from './components/Bikes/Bikes';
+import Rides from './containers/Rides/Rides';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -17,8 +17,8 @@ export default () => (
     <div className="container">
       <Jumbotron>
         <Route exact path="/" component={Home} />
-        <Route exact path="/image" component={Image} />
-        <Route exact path="/articles" component={Articles} />
+        <Route exact path="/bikes" component={Bikes} />
+        <Route exact path="/rides" component={Rides} />
       </Jumbotron>
     </div>
   </Wrapper>
