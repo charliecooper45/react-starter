@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const Title = styled.h1`
   padding: 10px;
@@ -11,6 +10,5 @@ const Title = styled.h1`
 export default () => (
   <div>
     <Title>Home Page</Title>
-    <Link to="/image">Image</Link>
   </div>
 );
