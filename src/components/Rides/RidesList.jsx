@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { Well } from 'react-bootstrap';
 import PropTypes from 'prop-types';
@@ -22,4 +23,8 @@ RidesList.propTypes = {
   clickHandler: PropTypes.func.isRequired
 };
 
-export default RidesList;
+const mapStateToProps = state => ({
+  rides: state.rides
+});
+
+export default connect(mapStateToProps)(RidesList);

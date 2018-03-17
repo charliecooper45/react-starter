@@ -1,0 +1,5 @@
+export const SET_RIDE = 'SET_RIDE';
+export const RIDES_LOADING = 'RIDES_LOADING';
+export const RIDE_ERROR = 'RIDE_ERROR';
+export const RIDES_FETCH_ERROR = 'RIDES_FETCH_ERROR';
+export const RIDES_FETCH_SUCCESS = 'RIDES_FETCH_SUCCESS';

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -8,12 +9,12 @@ const StyledForm = styled.form`
 `;
 
 // eslint-disable-next-line object-curly-newline
-const AddRideForm = ({ formErrors, ride, changeHandler, submitHandler }) => (
+const AddRideForm = ({ ride, changeHandler, submitHandler, error }) => (
   <div className="row col-md-offset-3 col-md-6">
     <h3>Add Ride</h3>
     <StyledForm>
-      <FormGroup validationState={formErrors.title !== '' ? 'error' : null}>
-        <ControlLabel>{formErrors.title}</ControlLabel>
+      <FormGroup validationState={error.title !== '' ? 'error' : null}>
+        <ControlLabel>{error.title}</ControlLabel>
         <FormControl
           type="text"
           placeholder="Title"
@@ -21,8 +22,8 @@ const AddRideForm = ({ formErrors, ride, changeHandler, submitHandler }) => (
           onChange={changeHandler('title')}
         />
       </FormGroup>
-      <FormGroup validationState={formErrors.distance !== '' ? 'error' : null}>
-        <ControlLabel>{formErrors.distance}</ControlLabel>
+      <FormGroup validationState={error.distance !== '' ? 'error' : null}>
+        <ControlLabel>{error.distance}</ControlLabel>
         <FormControl
           type="text"
           placeholder="Distance"
@@ -40,7 +41,7 @@ AddRideForm.propTypes = {
     title: PropTypes.string,
     distance: PropTypes.string
   }).isRequired,
-  formErrors: PropTypes.shape({
+  error: PropTypes.shape({
     title: PropTypes.string,
     distance: PropTypes.string
   }).isRequired,
@@ -48,4 +49,9 @@ AddRideForm.propTypes = {
   submitHandler: PropTypes.func.isRequired
 };
 
-export default AddRideForm;
+const mapStateToProps = state => ({
+  ride: state.ride,
+  error: state.rideError
+});
+
+export default connect(mapStateToProps)(AddRideForm);

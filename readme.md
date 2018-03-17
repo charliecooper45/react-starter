@@ -85,6 +85,9 @@ _eslint-loader_: lints code
 * [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 ## TODO:
-* Direct links
 * 404 errors
-* Redux
+* Direct links
+* Deployment/CircleCI
+* Tests
+* Webpack 4
+* Sass
