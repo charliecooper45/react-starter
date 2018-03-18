@@ -85,9 +85,11 @@ _eslint-loader_: lints code
 * [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 ## TODO:
+* Heroku Deployment
+* Real API
 * 404 errors
 * Direct links
-* Deployment/CircleCI
+* CircleCI
 * Tests
 * Webpack 4
 * Sass
