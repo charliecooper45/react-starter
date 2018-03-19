@@ -93,3 +93,4 @@ _eslint-loader_: lints code
 * Tests
 * Webpack 4
 * Sass
+* Hot reloading
