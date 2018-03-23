@@ -45,7 +45,7 @@ export function ridesFetchData() {
     dispatch(ridesLoading(true));
     axios.get('/rides')
       .then((res) => {
-        dispatch(rides(res.data))
+        dispatch(ridesFetchSuccess(res.data))
       })
       .catch((err) => {
         // TODO: better errors
@@ -64,7 +64,7 @@ export function ridesLoading(loading) {
   };
 }
 
-function rides(rides) {
+function ridesFetchSuccess(rides) {
   return {
     type: RIDES_FETCH_SUCCESS,
     rides

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Jumbotron } from 'react-bootstrap';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -16,9 +16,12 @@ export default () => (
     <Header />
     <div className="container">
       <Jumbotron>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/bikes" component={Bikes} />
-        <Route exact path="/rides" component={Rides} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/bikes" component={Bikes} />
+          <Route path="/rides" component={Rides} />
+          <Route render={() => <h1>404 Not Found</h1>} />
+        </Switch>
       </Jumbotron>
     </div>
   </Wrapper>
