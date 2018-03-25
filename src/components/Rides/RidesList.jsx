@@ -11,14 +11,15 @@ const StyledWell = styled(Well)`
 `;
 
 const RidesList = props => props.rides.map(ride => (
-  <StyledWell onClick={() => props.clickHandler(ride.id)} key={ride.id}>
+  // eslint-disable-next-line no-underscore-dangle
+  <StyledWell onClick={() => props.clickHandler(ride._id)} key={ride._id}>
     {ride.title} | {ride.distance} km
   </StyledWell>));
 
 RidesList.propTypes = {
   rides: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
-    distance: PropTypes.string
+    distance: PropTypes.number
   })).isRequired,
   clickHandler: PropTypes.func.isRequired
 };

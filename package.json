@@ -5,14 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "db": "json-server --watch ./db/db.json",
     "start": "webpack-dev-server --progress --inline --open --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap-css-only": "^3.3.7",
-    "json-server": "^0.12.1",
     "prop-types": "^15.6.1",
     "react": "^16.1.1",
     "react-bootstrap": "^0.32.0",
